@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 80px;
+}
+
+nav .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: gray;
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+nav ul li a:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+nav button {
+    border: 2px solid black;
+    padding: 10px 23px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+nav button:hover {
+    border: 2px solid hsl(256, 26%, 20%);
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    background-color: hsl(256, 26%, 20%);
+    height: 80vh;
+    width: 100%;
+    margin-top: 78px;
+    color: white;
+}
+
+section .hero-container .main-content {
+    position: absolute;
+    top: 190px;
+    left: 230px;
+    width: 480px;
+}
+
+section .hero-container .main-content h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    margin-bottom: 8px;
+}
+
+section .hero-container .main-content p {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 24px;
+    color: rgb(194, 194, 194);
+}
+
+section .hero-container .main-content button {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+section .hero-container .main-content button:hover {
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+
+section .hero-container .img-content {
+    position: absolute;
+    top: 160px;
+    left: 820px;
+}
+
+section .hero-container .right-pattern {
+    position: absolute;
+    right: 0px;
+}
+
+section .hero-container .left-pattern {
+    position: absolute;
+    left: 0px;
+    top: 400px;
+}
+
+
+.about {
+    margin-top: 25%;
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+.about .about-container .about-title {
+    margin-bottom: 75px;
+}
+
+.about .about-container .about-title h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+}
+
+.about .about-container .about-minicontainer {
+    display: flex;
+    gap: 20px;
+}
+
+
+.about .about-container .about-minicontainer .card-container img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 18px;
+}
+
+.about .about-container .about-minicontainer .card-container h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 18px;
+}
+
+.about .about-container .about-minicontainer .card-container p {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(178, 177, 177);
+    text-align: start;
+    font-size: 16px;
+}
+
+.more {
+    margin-top: 120px;
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+.more .more-container {
+    display: flex;
+    padding: 40px 90px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(256, 26%, 20%);
+    background-image: url(images/bg-pattern-intro-right-desktop.svg);
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.more .more-container .more-title {
+    width: 280px;
+}
+
+.more .more-container .more-title h1 {
+    color: white;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.more .more-container .more-button button {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.more .more-container .more-button button:hover {
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+
+/* Media query for screens 768px or smaller */
+@media only screen and (max-width: 768px) {
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav .logo {
+        margin-left: 12px;
+    }
+
+    nav .nav-container {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav .nav-container.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .nav-container {
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 40px);
+        max-height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container.active {
+        max-height: 300px;
+        /* Adjust according to your content height */
+    }
+
+
+    .nav-container li {
+        margin: 10px 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-container a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        color: #000;
+
+    }
+
+    .nav-container button {
+        display: block;
+        width: 80%;
+        padding: 10px 10px;
+        margin-bottom: 8px;
+    }
+
+    section {
+        height: auto;
+        width: 100%;
+    }
+
+    section .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .hero-container .img-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    section .hero-container .img-content img {
+        width: 100%;
+    }
+
+    section .hero-container .main-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    section .hero-container .right-pattern,
+    section .hero-container .left-pattern {
+        display: none;
+    }
+
+    section .hero-container .main-content h1 {
+        margin-top: 80px;
+        font-size: 40px;
+    }
+
+    section .hero-container .main-content p {
+        font-size: 18px;
+    }
+
+    section .hero-container .main-content button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-bottom: 80px;
+    }
+
+    .about {
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .about .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about-container .about-title {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .about-container .about-minicontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .about-container .about-minicontainer .card-container p {
+        text-align: center;
+        width: 250px;
+    }
+
+    footer {
+        margin-top: 60px;
+
+    }
+
+
+
+}
+
+/* Media query for screens 768px or smaller */
+@media only screen and (max-width: 768px) {
+    .more {
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .more .more-container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        background-position-x: center;
+    }
+
+    .more .more-container .more-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .more .more-container .more-title h1 {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+
+    .more .more-container .more-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .more .more-container .more-button button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 70px;
+    }
+
+    footer .footer-container .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+
+
+    }
+
+    footer .footer-container .other-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-container .other-container .other-card {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+footer {
+    margin-top: 120px;
+    background-image: url(images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: rgb(241, 241, 241);
+}
+
+footer .footer-container {
+    margin-left: 230px;
+    margin-right: 230px;
+    padding-top: 80px;
+}
+
+footer .footer-container .logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-container .logo-container .icons {
+    display: flex;
+    gap: 18px;
+}
+
+footer .footer-container .other-container {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+footer .footer-container .other-container .other-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+
+footer .footer-container .other-container .other-card p {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: gray;
+    margin-bottom: 35px;
+}
+
+footer .footer-container .other-container .other-card a {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+}
+
+footer .footer-container .other-container .other-card a:hover {
+    color: black;
+}
